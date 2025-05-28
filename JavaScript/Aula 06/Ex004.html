@@ -15,11 +15,12 @@
     <script>
         var nome = window.prompt('Qual é seu nome?')
         var n1 = window.prompt('Digite um número')
+        var n2 = window.prompt('Digite outro número')
         document.write(`Olá <strong>${nome}</strong> seu nome tem ${nome.length} letras.<br/>`)
         document.write(`Seu nome em maiusculas é ${nome.toUpperCase()}.<br/>`)
         document.write(`Seu nome em minusculas é ${nome.toLocaleLowerCase()}.<br/>`)
-        n1.toLocaleString()
-        document.writeln(n1)
+        if(n1 > n2) document.writeln(`O maior número é ${n1}`)
+        else document.writeln(`O maior número é ${n2}`)
     </script>
 </body>
 </html>
