@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Em  qual país você mora?</h1>
+    <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" id="confirmar" value="confirmar" onclick="confirmar()">
+    <div id="res"></div>
+    <script>
+        function confirmar() {
+            var nacionalidade = window.document.getElementById('nacionalidade').value
+            res.innerHTML = `<p id="resposta">Você mora em <strong>${nacionalidade}</strong>. </br></p>`
+            if (nacionalidade == 'Brasil') {
+                res.innerHTML += '<p id="respostabr">Você é <strong>Brasileiro</strong>.</p>'
+            }
+            else {
+                res.innerHTML += '<p id="respostaout">Você é <strong>Gringo</strong>.</p>'
+            }
+        }
+    </script>
+</body>
+</html>
