@@ -1,0 +1,29 @@
+button#botão {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.47);
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+}
+
+body {
+    font: normal 18pt arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url(Minecraft.ttf) format('truetype');
+}
+
+p#num {
+    font: normal 18pt minecraft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 10px;
+}
